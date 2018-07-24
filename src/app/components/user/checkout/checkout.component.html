@@ -1,0 +1,38 @@
+
+          <div id="features" class="text-center" *ngIf="menuItems.length > 0 ">
+              <div class="container">
+                <div class="section-title">
+                  <h2>Available Items at {{hotelData.hotel_name}}</h2>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12 col-sm-4" style="background: #fbfbfb;border: 1px solid grey; height: 400px;
+                  width: 350px;margin: 5px" *ngFor="let menu of menuItems">
+                    <div class="features-item" style="cursor: pointer;" (click)="selectedHotel(hotel)">
+                      <h3>Item Name : {{menu.item_name}}</h3>
+                      <img src="http://localhost:3000/uploads/{{menu.item_img}}" class="img-responsive" alt="">
+                      <p>Item Type : {{menu.item_type}}</p>
+                      <p>Item Price: {{menu.item_price}}</p><br><br><br>
+                      <input type="button" value="select" (click)="funselect(menu.item_name,menu.hotel_email)">
+                      <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Select Quantity
+                        <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                          <li>1</li>
+                          <li>2</li>
+                          <li>3</li>
+                        </ul>
+                      </div>
+      
+                      <input type="button" value="Checkout" (click)="checkout()">
+                      <!-- <mat-form-field>
+                        <mat-select placeholder="Select Quantity" [(value)]="menu.quantity">
+                          <mat-option *ngFor="let food of foods" [value]="food.value">
+                            {{ food.viewValue }}
+                          </mat-option>
+                        </mat-select>
+                      </mat-form-field> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>

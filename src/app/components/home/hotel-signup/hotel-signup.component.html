@@ -1,0 +1,57 @@
+<body style="background: url('https://cpb-us-e1.wpmucdn.com/blogs.uoregon.edu/dist/c/829/files/2012/10/PSD_Food_illustrations_3190_pancakes_with_butter-1wi1tz5.jpg')">
+<div class="limiter">
+		<div class="container-login100" >
+			<div class="wrap-login100">
+				<form class="login100-form validate-form">
+					<span class="login100-form-logo">
+						<i class="zmdi zmdi-landscape"></i>
+					</span>
+
+					<span class="login100-form-title p-b-34 p-t-27" style="color:black">
+						Restaurant SignUp
+					</span>
+
+					<div class="wrap-input100 validate-input" data-validate = "Hotel Name">
+						<input class="input100" type="text" name="username" [(ngModel)]="Hotelname" placeholder="Hotel Name">
+						<span class="focus-input100" data-placeholder="&#xf207;"></span>
+					</div>
+          <div class="wrap-input100 validate-input" data-validate = "Enter username">
+              <input class="input100" type="text" name="username"  [(ngModel)]="email" placeholder="Email">
+              <span class="focus-input100" data-placeholder="&#xf207;"></span>
+            </div>
+          	<div class="wrap-input100 validate-input" data-validate = "Enter username">
+                <input class="input100" type="password" name="username"  [(ngModel)]="Password"placeholder="Password">
+                <span class="focus-input100" data-placeholder="&#xf191;"></span>
+              </div>
+              <div class="wrap-input100 validate-input" data-validate="Enter password">
+                  <input class="input100" type="number" name="pass"  [(ngModel)]="Contact" placeholder="Contact Number">
+									<span class="focus-input100" data-placeholder="&#xf207;"></span>
+                </div>
+                <div class="wrap-input100 validate-input" data-validate="Enter Pincode">
+                    <input class="input100" type="text" name="pass"  [(ngModel)]="Location" placeholder="Location">
+                    <span class="focus-input100" data-placeholder="&#xf207;"></span>
+                  </div>
+					<div class="wrap-input100 validate-input" data-validate="Enter Pincode">
+						<input class="input100" type="number" name="pass"  [(ngModel)]="Pincode" placeholder="Pincode">
+            <span class="focus-input100" data-placeholder="&#xf207;"></span>
+					</div>
+          <div class="wrap-input100 validate-input" data-validate="Enter Address">
+              <input class="input100" type="text" name="pass"   [(ngModel)]="Address" placeholder="Address">
+              <span class="focus-input100" data-placeholder="&#xf207;"></span>
+            </div>
+            <div class="wrap-input100 validate-input" data-validate="Enter Address">
+                <input class="input100" type="file" name="pass" (change)="selectFile($event)" placeholder="Address">
+            
+              </div>
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn" value="submit"(click)="onClickSubmit()"> 
+							SignUp
+						</button>
+					</div>
+
+				
+				</form>
+			</div>
+		</div>
+	</div>
+</body>

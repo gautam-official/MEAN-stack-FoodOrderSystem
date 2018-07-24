@@ -1,0 +1,51 @@
+<body style="background: url('http://www.dfordelhi.in/wp-content/uploads/2018/05/Chocolate-Pizza-e1526904921465.jpg')">
+<div class="limiter">
+		<div class="container-login100" >
+			<div class="wrap-login100">
+				<form class="login100-form validate-form">
+					<span class="login100-form-logo">
+						<i class="zmdi zmdi-landscape"></i>
+					</span>
+
+					<span class="login100-form-title p-b-34 p-t-27" style="color:black;">
+						Add Menu
+					</span>
+
+					<div class="wrap-input100 validate-input" data-validate = "Item Name">
+						<input class="input100" type="text" name="username" placeholder="Item Name" [(ngModel)]="itemname">
+						<span class="focus-input100" data-placeholder="&#xf207;"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate="Item Type">
+						<input class="input100" type="text" name="pass" placeholder="Item Type" [(ngModel)]="itemtype">
+            <span class="focus-input100" data-placeholder="&#xf207;"></span>
+					</div>
+          <div class="wrap-input100 validate-input" data-validate="Price">
+              <input class="input100" type="text" name="pass" placeholder="Price" [(ngModel)]="price">
+              <span class="focus-input100" data-placeholder="&#xf207;"></span>
+            </div>
+            <div class="wrap-input100 validate-input" data-validate="Description">
+                <textarea class="input100" type="text" name="pass" placeholder="Description" [(ngModel)]="description"></textarea>
+                <span class="focus-input100" data-placeholder="&#xf207;"></span>
+              </div>
+              <div class="wrap-input100 validate-input" data-validate="Picture">
+                  <input class="input100" type="file" (change)="selectFile($event)"   name="pass"   placeholder="Picture">
+              
+                </div>
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn" (click)="AddMenu()">
+							Add Menu
+						</button>
+					</div>
+
+					<!-- <div class="text-center p-t-90">
+						<a class="txt1" >
+							Forgot Password?
+						</a>
+					</div> -->
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+	
